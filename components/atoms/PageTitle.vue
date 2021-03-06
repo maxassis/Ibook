@@ -1,13 +1,11 @@
 <template>
-  <h1>
+  <h1 class="page-title">
     {{ text }} <b>{{ strong }}</b>
   </h1>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
-
-export default Vue.extend({
+<script>
+export default {
   props: {
     text: {
       type: String,
@@ -18,7 +16,7 @@ export default Vue.extend({
       required: true
     }
   }
-});
+};
 </script>
 
 <style lang="scss" scoped>
