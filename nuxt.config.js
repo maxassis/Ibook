@@ -32,6 +32,10 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ["@nuxtjs/axios", "@nuxtjs/style-resources"],
 
+  axios: {
+    baseURL: "https://ibook-api.herokuapp.com"
+  },
+
   styleResources: {
     scss: ["@/components/bosons/*.scss"]
   },
